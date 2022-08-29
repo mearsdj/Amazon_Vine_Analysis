@@ -2,17 +2,17 @@
 
 ## Purpose
 
-Using `Pyspark`, a `PostgreSQL` server on `AWS`, and `Google Colab`, a comparision of product reviews made through the Amazon Vine product review program was made. The purpose of the comparison was to determine if there was any evidence of bias towards positivity in vine-based reviews, versus non-vine reviews.
+Using `Pyspark`, a `PostgreSQL` server on `AWS`, and `Google Colab`, a comparision of product reviews made through the Amazon Vine product review program was conducted. The purpose of the comparison was to look for evidence of positivity bias in vine-based reviews, versus non-vine reviews.
 
 ## Data
 
 Data was available by product category, as provided by Amazon [here](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt).
-The above data set includes both vine and non-vine product reviews. 
+The above data sets includes both vine and non-vine product reviews. 
 
 ## Analysis
 
 For this analysis, the [*gift cards*](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Gift_Card_v1_00.tsv.gz
-) category was analysed for bias. After completing the analysis however, it was determined that no vine ratings were assigned to gift cards, so a subsequent analysis was completed on the [*outdoor product*](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Outdoors_v1_00.tsv.gz) *category*.
+) category was analysed. After completing the analysis however, it was determined that no vine ratings were assigned to gift cards, so a subsequent analysis was completed on the [*outdoor product*](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Outdoors_v1_00.tsv.gz) *category*.
 
 The procedure for both analyses was as follows:
 1. Download data from the s3 site.
@@ -44,7 +44,7 @@ Given the equal distribution of 5-star ratings between both samples, we find **n
 A test of the statistical significance of the proportion of 5 star-ratings in vine and non-vine reviews should be conducted to confirm the veracity of the results.  The test could use the following null and alternative hypotheses.
 
 
-$$H_0: \text{The proportion of vine 5-star reviews} =  \text{proportion of non-vine 5-star reviews (in this case 53\%)}$$
+$$H_0: \text{The proportion of vine 5-star reviews} =  \text{proportion of non-vine 5-star reviews (in this case 53\%) }$$
 
 $$H_1: \text{The proportion of vine 5-star reviews} \neq \text{proportion of non-vine 5 star reviews}$$
 
