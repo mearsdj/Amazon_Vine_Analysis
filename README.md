@@ -44,7 +44,7 @@ Given the equal distribution of 5-star ratings between both samples, we find **n
 A test of the statistical significance of the proportion of 5 star-ratings in vine and non-vine reviews should be conducted to confirm the veracity of the results.  The test could use the following null and alternative hypotheses.
 
 
-$$H_0: \text{The proportion of vine 5-star reviews} =  \text{proportion of non-vine 5-star reviews (in this case 53\%) }$$
+$$H_0: \text{The proportion of vine 5-star reviews} =  \text{proportion of non-vine 5-star reviews (in this case 53 percent) }$$
 
 $$H_1: \text{The proportion of vine 5-star reviews} \neq \text{proportion of non-vine 5 star reviews}$$
 
