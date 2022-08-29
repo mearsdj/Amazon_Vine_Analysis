@@ -12,14 +12,14 @@ The above data set includes both vine and non-vine product reviews.
 ## Analysis
 
 For this analysis, the [*gift cards*](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Gift_Card_v1_00.tsv.gz
-) category was analysed for bias. After completing the analysis however, it was determined that no vine ratings were assigned to gift cards, so a subsequent analysis was completed on the [*outdoor product category*](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Outdoors_v1_00.tsv.gz).
+) category was analysed for bias. After completing the analysis however, it was determined that no vine ratings were assigned to gift cards, so a subsequent analysis was completed on the [*outdoor product*](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Outdoors_v1_00.tsv.gz) *category*.
 
 The procedure for both analyses was as follows:
 1. Download data from the s3 site.
 2. Create a data frame containing the following data points: **review_id, star_rating, helpful_votes, total_votes, vine, verified_purchase**
 3. Limit the dataset to reviews with:
-    a. Greater than 20 total votes (**total_votes** column)
-    b. Helpful votes being 50% or more of total votes (**helpful_votes**/**total_votes** >= 50%)
+   - Greater than 20 total votes (**total_votes** column)
+   - Helpful votes being 50% or more of total votes (**helpful_votes**/**total_votes** >= 50%)
 4. Segment data to compare the number of 5-star (**star_rating**) ratings produced by reviewers participating in the vine program (**vine**) versus reviewers not participating in the program.  
 
 
